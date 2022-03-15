@@ -3,3 +3,4 @@ obj/
 .fslsp/
 .ionide/
 .fake/
+build.fsx.lock
