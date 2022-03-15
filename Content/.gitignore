@@ -1,0 +1,13 @@
+.env
+bin/
+obj/
+.idea/
+.ionide/
+node_modules/
+.fake
+.vs/
+.cache/
+*.user
+msbuild.binlog
+config-test.yml
+.fslsp/

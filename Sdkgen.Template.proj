@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>`dotnet new` template for Sdkgen</Description>
+    <Authors>Joshua Passos</Authors>
+    <PackageProjectUrl>https://github.com/joshuapassos/Sdkgen.Template</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/joshuapassos/Sdkgen.Template.git</RepositoryUrl>
+    <License>MIT</License>
+    <PackageTags>template;web;f#;Sdkgen;</PackageTags>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageType>Template</PackageType>
+    <NoBuild>true</NoBuild>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ExcludeFromPackage>
+        Content/node_modules/**/*;
+        Content/packages/**/*;
+        Content/paket-files/**/*;
+        **/obj/**/*;
+        **/bin/**/*;
+        **/.fake/**/*;
+        **/.ionide/**/*;
+    </ExcludeFromPackage>
+</PropertyGroup>
+  <ItemGroup>
+    <Content Include="Content/**/*" Exclude="$(ExcludeFromPackage)" >
+        <PackagePath>Content\</PackagePath>
+    </Content>
+  </ItemGroup>
+</Project>
