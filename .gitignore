@@ -2,3 +2,4 @@ bin/
 obj/
 .fslsp/
 .ionide/
+.fake/
